@@ -15,9 +15,9 @@ public class Main {
                 break;
             }
             int amountTicket = person.getAmountTicket();
+            person.setAmountTicket(amountTicket - 1);
             if (amountTicket - 1 > 0) {
                 System.out.println(person.name + " " + person.surname + " прокатился на аттракционе осталось билетов " + (amountTicket - 1));
-                person.setAmountTicket(amountTicket - 1);
                 dequePerson.addLast(person);
             } else {
                 System.out.println(person.name + " " + person.surname + " прокатился на аттракционе");
